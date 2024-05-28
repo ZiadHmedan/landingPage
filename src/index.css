@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.bg-linear {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  //border:10px solid black;
+}
+.btn-shadow{
+  box-shadow:0px 5px 5px #F98F75;
+ }
