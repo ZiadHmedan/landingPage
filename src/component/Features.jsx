@@ -23,10 +23,10 @@ export default function Features({ features }) {
 
      
 
-      <div className="relative ml-4 mt-[54px] xl:mt-0 space-y-[47px] ">
+      <div className="xl:relative ml-4 mt-[54px] xl:mt-0 space-y-[47px] ">
         {features.map(({ id, num, title, description }) => (
           <div key={id} className="">
-            <div className=" xl:flex xl:items-center bg-PaleRed xl:bg-white  rounded-l-full  ">
+            <div className=" flex items-center gap-4 bg-PaleRed xl:bg-white  rounded-l-full  ">
               <NumBtn>{num}</NumBtn>
               <TritaryHeader>{title}</TritaryHeader>
             </div>
