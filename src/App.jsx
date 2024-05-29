@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "./ui/Header";
 import Features from "./component/Features";
+import Testimonials from "./component/Testimonials";
 
 // import Features from "./component/Features";
 // const testimonials = [
@@ -65,7 +66,8 @@ function App() {
       {/* <img src={bg} alt="bg" className=" absolute z-[-1]"/> */}
       <Header isOpen={isOpen} handleOpen={handleOpen} />
       <main>  
-        <Features features={features}/>features
+        <Features features={features}/>
+        <Testimonials/>
       </main>
     </div>
   );
