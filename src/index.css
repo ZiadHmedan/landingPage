@@ -13,3 +13,6 @@
   left:-50%;
 
 }
+.translate50{
+  transform:translateX(-100%);
+}
