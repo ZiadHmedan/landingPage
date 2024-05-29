@@ -11,7 +11,7 @@ import Button from "../ui/Button";
 // eslint-disable-next-line react/prop-types
 export default function Header({ isOpen, handleOpen }) {
   return (
-    <header className="container  pt-[33px]  overflow-clip  ">
+    <header className="container  pt-[33px] ">
       <img src={bgHeader} alt="header-background" className="absolute top-[-100px] right-[-100px] z-[-1]  " />
       {/* header on desctop */}
       <div className="flex justify-between items-center  ">
@@ -30,7 +30,7 @@ export default function Header({ isOpen, handleOpen }) {
         </button>
       </div>
 
-      <div className="grid   justify-between xl:grid-cols-2 xl:mt-[120px] ">
+      <div className="grid   justify-between xl:grid-cols-2 xl:mt-[100px] ">
         {/* show the hero imgage or nav depend on isOpen */}
         <div className="mt-[35px] xl:order-2 xl:ml-auto	mr-[-10px] z-10">
           {!isOpen ? (

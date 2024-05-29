@@ -58,7 +58,7 @@ export default {
         //   // 100:"#F33C3C"
         // } ,
           
-        DarkBlue: "#242d52",
+        DarkBlue: 'hsl(228, 39%, 23%)',        darkGrayishBlue: 'hsl(227, 12%, 61%)',
 
         white: "#ffffff",
         "almost-white": "#fafafa",

@@ -1,8 +1,8 @@
-// /* eslint-disable react/prop-types */
+/* eslint-disable react/prop-types */
 
-// export default function TritaryHeader({children,}) {
+export default function TritaryHeader({children,}) {
 
-//   return (
-//     <h3 className="font-bold tracking-xl">{children}</h3>
-//   )
-// }
+  return (
+    <h3 className="font-bold tracking-xl">{children}</h3>
+  )
+}
