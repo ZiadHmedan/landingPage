@@ -8,7 +8,7 @@ import bgHeader from "../assets/images/bg-tablet-pattern.svg";
 import NumBtn from "./NumBtn";
 export default function Features({ features }) {
   return (
-    <section className="bg-dark relative grid xl:gap-[125px] xl:container xl:mt-[120px] xl:grid-cols-2  xl:justify-between mt-[95px]  ">
+    <section className=" relative grid xl:gap-[125px] xl:container xl:mt-[120px] xl:grid-cols-2  xl:justify-between mt-[95px]  ">
             <img src={bgHeader} alt="header-background" className="absolute centerPosition  z-[-1]  hidden xl:block" />
 
       <div className=" container xl:justify-self-start ">
