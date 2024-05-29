@@ -45,7 +45,6 @@ export default function Header({ isOpen, handleOpen }) {
             </div>
           )}
         </div>
-        {/* hero title and subtitle */}
         <HeroDescription />
       </div>
     </header>

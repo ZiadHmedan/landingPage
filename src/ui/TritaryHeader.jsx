@@ -3,6 +3,6 @@
 export default function TritaryHeader({children,}) {
 
   return (
-    <h3 className="font-bold tracking-xl">{children}</h3>
+    <h3 className="font-bold tracking-xl text-base">{children}</h3>
   )
 }
