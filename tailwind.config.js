@@ -50,23 +50,18 @@ export default {
     },
     extend: {
       colors: {
-        BrightRed:"#f3603c",
+        BrightRed: "#f3603c",
         BrightRedLight:"#F98F75",
-        // primary:{
-        //   1:,
-        //   2:
-        //   // 100:"#F33C3C"
-        // } ,
-          
-        DarkBlue: 'hsl(228, 39%, 23%)',        darkGrayishBlue: 'hsl(227, 12%, 61%)',
+        DarkBlue: "#242d52",
 
         white: "#ffffff",
         "almost-white": "#fafafa",
 
         black: "#000000",
         gray: {
-          med: "#8d8d8d",
+          
           light: "#e5e9ea",
+          med: "#8d8d8d",
           dark: "#343a40",
         },
 
