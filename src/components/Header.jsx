@@ -13,7 +13,6 @@
 //         <Navbar />
 
 import { closeIcon, humburgerIcon, logo } from "../utils";
-import Button from "./Button";
 import Navbar from "./Navbar";
 
 //         <Button type="header" />
@@ -37,7 +36,7 @@ export default function Header({ isOpen, handleOpen }) {
       </a>
 
       <Navbar />
-      <button className=" btn xl:grid  hidden">
+      <button className=" btn xl:grid  hidden btn-orange">
         Get Started
       </button>
    

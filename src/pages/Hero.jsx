@@ -34,10 +34,10 @@ export default function Hero() {
           while keeping the larger team goals in view.
         </p>
         <div className="max-lg:grid">
-          <button className="btn ">Get Started</button>
+          <button className="btn btn-orange">Get Started</button>
         </div>
       </div>
-      <div className="   max-lg:justify-self-center max-lg:order-1 xl:mr-[-19px] border max-xl:mb-5">
+      <div className="max-lg:justify-self-end max-lg:order-1 ">
         <img src={heroImage} alt="hero-image" />
       </div>
     </div>

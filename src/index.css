@@ -17,7 +17,13 @@
   @apply leading-xs xl:leading-xss   opacity-50;
 }
 .btn {
-  @apply mx-auto text-xs  content-center xl:mx-0 text-softPink bg-BrightRed rounded-full btn-shadow  w-[137px] h-11 mb-auto text-center hover:bg-BrightRedLight transition ease-in-out duration-500  shadow-BrightRed;
+  @apply mx-auto text-xs  content-center xl:mx-0 rounded-full   w-[137px] h-11 mb-auto text-center transition ease-in-out duration-500  ;
+}
+.btn-white{
+  @apply bg-softPink text-BrightRed hover:text-opacity-50
+}
+.btn-orange{
+  @apply text-softPink bg-BrightRed  hover:bg-BrightRedLight btn-shadow shadow-BrightRed
 }
 .bg-linear {
   background: linear-gradient(

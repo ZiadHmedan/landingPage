@@ -3,7 +3,7 @@ import { NumBtn } from "../components";
 /* eslint-disable react/prop-types */
 export default function Features({ features }) {
   return (
-    <section className=" xl:container xl:mt-[132px] mt-[93px] grid lg:grid-cols-2 ">
+    <section className=" xl:container xl:mt-[132px] mt-[93px] grid lg:grid-cols-2">
       <div className="container">
         <h2 className="h2-text xl:mb-6 mb-3 max-xl:text-center">
           What’s different about Manage?
