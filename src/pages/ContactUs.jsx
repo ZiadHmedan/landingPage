@@ -8,7 +8,7 @@ import {
 export default function ContactUs() {
   return (
     <div className=" py-[62px] bg-dark xl:mt-[82px] ">
-      <div className="container grid xl:grid-cols-3">
+      <div className="container grid xl:grid-cols-3  bg-red-400 ">
         <div className="">
           <img src={logo} alt="manage-logo" />
           <ul className="flex gap-3  xl:mt-[83px]">
@@ -120,7 +120,7 @@ export default function ContactUs() {
               Go
             </NumBtn>
           </form>
-          <p className="xl:mt-[60px] text-xs   tracking-[-0.2px]  opacity-50 text-white float-right">Copyright 2020. All Rights Reserved</p>
+          <p className="xl:mt-[px] text-xs   tracking-[-0.2px]  opacity-50 text-white float-right">Copyright 2020. All Rights Reserved</p>
         </div>
       </div>
     </div>
