@@ -12,7 +12,7 @@
 //         </a>
 //         <Navbar />
 
-import { closeIcon, humburgerIcon, logo } from "../utils";
+import { closeIcon, humburgerIcon, logo } from "../utils"
 import Navbar from "./Navbar";
 
 //         <Button type="header" />

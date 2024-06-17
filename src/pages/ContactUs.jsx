@@ -1,10 +1,5 @@
 import { NumBtn } from "../components";
-import {
- 
-  logo,
-
-} from "../utils";
-
+import { logo } from "../utils";
 export default function ContactUs() {
   return (
     <div className=" py-[62px] bg-dark xl:mt-[82px] ">
