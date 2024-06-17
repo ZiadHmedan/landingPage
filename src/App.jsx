@@ -3,7 +3,7 @@ import { Header } from "./components";
 // import Hero from "./pages/Hero";
 // import Features from "./pages/Features";
 // import Features from "./pages/Features";
-import { GetStarted, Features, Hero, Testimonials } from "./pages";
+import { GetStarted, Features, Hero, Testimonials, ContactUs } from "./pages";
 import { features, testimonials } from "./data";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +21,7 @@ function App() {
         {/* <Testimonials testimonials={testimonials}/> */}
         <GetStarted />
       </main>
+      <ContactUs/>
     </>
   );
 }
