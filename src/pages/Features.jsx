@@ -20,9 +20,7 @@ export default function Features({ features }) {
             key={id}
             className="xl:grid grid-2   xl:gap-x-7 mb-11 xl:mb-10  items-baseline gap-1 "
           >
-            {/* <div className="bg-red-200 row-span-2">1</div>
-            <div className="bg-red-300">2</div>
-            <div className="bg-red-400">3</div> */}
+         
 
             <div className="ml-2 overflow-hidden gap-2 grid max-lg:flex flex-wrap items-baseline  max-xl:w-full max-xl:bg-PaleRed max-xl:rounded-l-full xl:hidden ">
               <NumBtn style="row-span-2 h-[39px]">{num}</NumBtn>
@@ -32,7 +30,7 @@ export default function Features({ features }) {
             <NumBtn style="row-span-2 max-xl:hidden h-[39px]">{num}</NumBtn>
 
             <h3 className="h3-text mb-2 max-xl:hidden ">{title}</h3>
-            <p className="max-xl:px-2 p-text max-w-[403px]">{description}</p>
+            <p className="max-xl:pl-4 max-xl:pr-[14px] max-xl:mt-2 text-[14px] p-text max-w-[403px]">{description}</p>
           </div>
         ))}
       </div>
