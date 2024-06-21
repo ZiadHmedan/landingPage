@@ -25,11 +25,11 @@ export default function Features({ features }) {
             <div className="bg-red-400">3</div> */}
 
             <div className="ml-2 overflow-hidden gap-2 grid max-lg:flex flex-wrap items-baseline  max-xl:w-full max-xl:bg-PaleRed max-xl:rounded-l-full xl:hidden ">
-              <NumBtn style="row-span-2">{num}</NumBtn>
+              <NumBtn style="row-span-2 h-[39px]">{num}</NumBtn>
 
               <h3 className="h3-text mb-2 max-xs:text-[14px]">{title}</h3>
             </div>
-            <NumBtn style="row-span-2 max-xl:hidden">{num}</NumBtn>
+            <NumBtn style="row-span-2 max-xl:hidden h-[39px]">{num}</NumBtn>
 
             <h3 className="h3-text mb-2 max-xl:hidden ">{title}</h3>
             <p className="max-xl:px-2 p-text max-w-[403px]">{description}</p>
