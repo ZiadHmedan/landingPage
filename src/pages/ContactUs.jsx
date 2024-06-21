@@ -183,10 +183,7 @@ export default function ContactUs() {
           </ul>
         </nav>
         <div className="grid max-xl:mx-auto xl:justify-self-end ">
-          <form
-            action=""
-            className="flex gap-2  "
-          >
+          <form action="" className="flex gap-2  ">
             <input
               type="text"
               className="self-start rounded-full placeholder:text-xs placeholder:pl-4 py-3 w-[239px] xl:w-[200px] "
@@ -199,14 +196,14 @@ export default function ContactUs() {
               Go
             </NumBtn>
           </form>
-          <p className=" max-xl:hidden bg-DarkBlue xl:self-end xl:justify-self-end xl:mt-[px] text-xs   tracking-[-0.2px]  opacity-50 text-white ">
+          <p className=" max-xl:hidden  xl:self-end xl:justify-self-end xl:mt-[px] text-xs   tracking-[-0.2px]  opacity-50 text-white ">
             Copyright 2020. All Rights Reserved
           </p>
         </div>
       </div>
       <p className=" xl:hidden pb-[30px] text-center text-xs  font-[100] tracking-[-0.2px]  opacity-50 text-white">
-            Copyright 2020. All Rights Reserved
-          </p>
+        Copyright 2020. All Rights Reserved
+      </p>
     </footer>
   );
 }
