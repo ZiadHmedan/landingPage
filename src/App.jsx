@@ -18,7 +18,7 @@ function App() {
       <Hero />
       <main>
         <Features features={features} />
-        {/* <Testimonials testimonials={testimonials}/> */}
+        <Testimonials testimonials={testimonials}/>
         <GetStarted />
       </main>
       <ContactUs/>

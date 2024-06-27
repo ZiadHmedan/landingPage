@@ -41,7 +41,7 @@ export default {
       xss:"300px",
       xs:"327px",
       sm:" 540px",
-      md:" 720px",
+      md:" 790px",
       lg:" 960px",
       xl:" 1110px",
     },

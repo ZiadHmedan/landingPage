@@ -9,10 +9,10 @@ import pinterest from "../assets/images/icon-pinterest.svg";
 import twitter from "../assets/images/icon-twitter.svg";
 import youtube from "../assets/images/icon-youtube.svg";
 
-import anisha from "../assets/images/avatar-anisha.png";
-import ali from "../assets/images/avatar-ali.png";
+import steve from "../assets/images/steve.jpg";
+import dave from "../assets/images/dave.jpg";
+import ben from "../assets/images/ben.jpg";
 import richard from "../assets/images/avatar-richard.png";
-import shanai from "../assets/images/avatar-shanai.png";
 
 export {
   pinterest,
@@ -25,8 +25,8 @@ export {
   closeIcon,
   heroImage,
   bgHeader,
-  anisha,
-  ali,
+  steve,
+  ben,
   richard,
-  shanai,
+  dave,
 };

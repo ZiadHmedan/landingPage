@@ -1,4 +1,4 @@
-import { richard } from "../utils";
+import { ben, steve, richard, dave } from "../utils";
 export const features = [
   {
     id: 1,
@@ -20,35 +20,35 @@ export const features = [
     title: "Everything you need in one place",
     description:
       "Stop jumping from one service to another to communicate, store files,track tasks and share documents. Manage offers an all-in-one team productivity solution.",
-  },
+    },
 ];
 export const testimonials = [
   {
     id: 1,
-    Name: "Anisha Li",
+    Name: "ben jhon",
     comment:
       "“Manage has supercharged our teams workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”",
-    avatar: richard,
+    avatar: ben,
   },
   {
     id: 2,
-    Name: "Ali Bravo",
+    Name: "steve Bravo",
     comment:
-      "“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is muchmore focused.”",
-    avatar: richard,
+    "“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is muchmore focused.”",
+    avatar: steve,
   },
   {
     id: 3,
     Name: "Richard Watts",
     comment:
-      "“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”",
+    "“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”",
     avatar: richard,
   },
   {
     id: 4,
-    Name: "Shanai Gough",
+    Name: "dave Gough",
     comment:
       "“Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”",
-    avatar: richard,
+    avatar: dave,
   },
 ];

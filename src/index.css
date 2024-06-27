@@ -1,6 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: 'Be Vietnam';
+  src: url('./assets/font/BeVietnam-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Be Vietnam';
+  src: url('./assets/font/BeVietnam-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 .flex-center {
   @apply flex justify-between items-center;
 }
@@ -59,5 +73,11 @@
   grid-column: 1/-1;
 }
 .test {
-  transform: translateX(-120px);
+  transform: translateX(-85px);
+}
+.font-vitenam{
+  font-family: 'Be Vietnam';
+  src: url('/fonts/BeVietnam-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
