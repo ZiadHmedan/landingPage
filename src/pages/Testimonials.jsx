@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 
-import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 export default function Testimonials({ testimonials }) {
   const [isActive, setIsActive] = useState(1);
 
@@ -14,13 +15,49 @@ export default function Testimonials({ testimonials }) {
     };
   }, [isActive]);
 
+  const [width, setWidth] = useState(0);
+  const slider = useRef();
+  useEffect(() => {
+    setWidth(slider.current.scrollWidth - slider.current.clientWidth );
+  }, []);
+
   return (
-    <section className="  xl:mt-[106px]  mt-[54px]  xl:mb-[172px] mb-[42px]   ">
+    <motion.section
+      ref={slider}
+      className="  xl:mt-[106px]  mt-[54px]  xl:mb-[172px] mb-[42px]    overflow-hidden"
+    >
       <h2 className="h2-text  text-center  xl:mb-[56px] mb-[62px]  ">
         What they’ve said
       </h2>
-       
-      <ul className=" bg-almost-white -z-50 relative mx-auto w-[340px] min-h-[248px]   mt-[158px]    flex flex-col gap-10 ">
+
+      <motion.ul
+        drag="x"
+        dragConstraints={{ right: 0, left:-width}}
+        className=" max-lg:hidden  flex cursor-grab mt-[92px]  "
+      >
+        {testimonials.map(({ id, Name, comment, avatar }) => (
+          <li
+            key={id}
+            className={` min-h-[220px] min-w-[540px] relative  transition ease-in-out  duration-700 -z-10   mx-auto `}
+          >
+            <div>
+              <img
+                src={avatar}
+                alt={`${Name}-avatar`}
+                className="  rounded-full absolute right-[50%] translate-x-[50%] translate-y-[-50%] w-[72px] h-[72px]"
+              />
+            </div>
+            <h3 className="h3-text text-center mt-[67px] max-xl:mt-[60px]">
+              {Name}
+            </h3>
+            <p className={`p-text  text-center   mt-5  font-vitenam xl:px-10`}>
+              {comment}
+            </p>
+          </li>
+        ))}
+      </motion.ul>
+
+      <ul className=" lg:hidden   bg-almost-white -z-50 relative mx-auto w-[340px] min-h-[248px]   mt-[158px]    flex flex-col gap-10 ">
         {testimonials.map(({ id, Name, comment, avatar }) => (
           <li
             key={id}
@@ -44,13 +81,18 @@ export default function Testimonials({ testimonials }) {
           </li>
         ))}
       </ul>
-      <ul className="flex gap-1 mx-auto mt-5 justify-center">
+      <ul className=" lg:hidden flex gap-1 mx-auto mt-5 justify-center">
         {testimonials.map(({ id }) => (
-          <li key={id} className={`w-2 h-2  ${id === isActive ?"bg-BrightRed" :"bg-white"} border border-BrightRed rounded-full`}></li>
+          <li
+            key={id}
+            className={`w-2 h-2  ${
+              id === isActive ? "bg-BrightRed" : "bg-white"
+            } border border-BrightRed rounded-full`}
+          ></li>
         ))}
       </ul>
       <div className="grid place-items-center ">
-        <button className="btn btn-orange xl:mt-[88px] mt-[50px] z-20 ">
+        <button className="btn btn-orange xl:mt-[88px] mt-[50px] z-50 ">
           Get started
         </button>
       </div>
@@ -69,7 +111,7 @@ export default function Testimonials({ testimonials }) {
           </li>
         ))}
       </ul> */}
-    </section>
+    </motion.section>
     // <section className="mt-[62px] xl:mt-[146px]   ">
     //   <ul className="flex gap-7 w-[2050px] mt-[62px] xl:mt-[92px] xl:test">
     // {

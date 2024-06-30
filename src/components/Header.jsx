@@ -5,13 +5,13 @@ import MobileNavbar from "./MobileNavbar";
 
 import Navbar from "./Navbar";
 
-export default function Header({ isOpen, handleOpen }) {
+export default function Header({ isOpen, handleOpen, inView }) {
   return (
-    <>
+    <div className="" >
       {isOpen && (
         <div className="bg-linear fixed top-0 right-0 left-0 bottom-0"></div>
       )}
-      <header className="z-50  py-4 container fixed flex top-[33px] left-[50%] translate-x-[-50%] justify-between ">
+      <header className={`z-50 container py-4   flex fixed ${inView ? "   top-0  py-5":"top-[33px]  "} bg-almost-white left-[50%] translate-x-[-50%]   justify-between `}>
         <a href="#">
           <img src={logo} alt="manage-logo" />
         </a>
@@ -39,6 +39,6 @@ export default function Header({ isOpen, handleOpen }) {
           </div>
         </button>
       </header>
-    </>
+    </div>
   );
 }
