@@ -91,8 +91,8 @@ export default function Testimonials({ testimonials }) {
           ></li>
         ))}
       </ul>
-      <div className="grid place-items-center ">
-        <button className="btn btn-orange xl:mt-[88px] mt-[50px] z-50 ">
+      <div className="grid place-items-center pb-2">
+        <button className="btn btn-orange xl:mt-[88px] mt-[50px] z-30 ">
           Get started
         </button>
       </div>

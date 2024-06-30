@@ -9,6 +9,8 @@ import pinterest from "../assets/images/icon-pinterest.svg";
 import twitter from "../assets/images/icon-twitter.svg";
 import youtube from "../assets/images/icon-youtube.svg";
 import bgTablet from "../assets/images/bg-tablet-pattern.svg";
+import bgMobile from "../assets/images/bg-simplify-section-mobile.svg";
+import bgDesktop from "../assets/images/bg-simplify-section-desktop.svg";
 
 import steve from "../assets/images/steve.jpg";
 import dave from "../assets/images/dave.jpg";
@@ -27,7 +29,9 @@ export {
   heroImage,
   bgHeader,
   steve,
+  bgMobile ,
   ben,
+  bgDesktop,
   richard,
   dave,
   bgTablet

@@ -19,6 +19,7 @@ function App() {
 
   return (
     <>
+    
       <img src={bgTablet} alt="bav" className={`xl:hidden transition ease-in-out duration-700 absolute ${!isOpen ? "translate-y-[-200%] ":" top-0"}  -z-10`} />
       <Header inView ={inView} isOpen={isOpen} handleOpen={handleOpen} />
       <Hero />
