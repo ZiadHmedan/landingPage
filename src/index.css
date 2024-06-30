@@ -81,3 +81,8 @@
   font-weight: normal;
   font-style: normal;
 }
+.bg-img{
+  background-image: url("./assets/images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: right-top;
+}

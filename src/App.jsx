@@ -5,24 +5,24 @@ import { Header } from "./components";
 // import Features from "./pages/Features";
 import { GetStarted, Features, Hero, Testimonials, ContactUs } from "./pages";
 import { features, testimonials } from "./data";
+import { bgTablet } from "./utils";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   function handleOpen() {
     setIsOpen(show => !show);
   }
   return (
-    <>
-      {/* <img src={bgHeader} alt="background " className="absolute  z-[-1] top-[-15%] right-[-16%] "/> */}
-
+    <div className="">
+      <img src={bgTablet} alt="bav" className={`xl:hidden transition ease-in-out duration-700 absolute ${!isOpen ? "translate-y-[-200%] ":" top-0"}  -z-10`} />
       <Header isOpen={isOpen} handleOpen={handleOpen} />
       <Hero />
       <main>
         <Features features={features} />
-        <Testimonials testimonials={testimonials}/>
+        <Testimonials testimonials={testimonials} />
         <GetStarted />
       </main>
-      <ContactUs/>
-    </>
+      <ContactUs />
+    </div>
   );
 }
 

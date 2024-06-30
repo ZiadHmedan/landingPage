@@ -7,7 +7,7 @@ export default function Testimonials({ testimonials }) {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setIsActive((isActive + 1) % 5 === 0 ? 1 : (isActive + 1) % 5);
-    }, 2500);
+    }, 3500);
 
     return () => {
       clearInterval(intervalId);
@@ -19,21 +19,12 @@ export default function Testimonials({ testimonials }) {
       <h2 className="h2-text  text-center  xl:mb-[56px] mb-[62px]  ">
         What they’ve said
       </h2>
-        {/* <ul className="   mt-[158px] w-[2250px] flex gap-8  ">
-          {testimonials.map(({ id, Name, comment, avatar }) => (
-            <li key={id} className={`w-[540px]  bg-almost-white relative `}>
-              <img src={avatar} alt ={`${Name}-avatar`} className=" absolute right-[50%] translate-x-[50%] translate-y-[-50%] w-[72px] h-[72px]"/>
-              <h3 className="h3-text text-center mt-[67px] max-xl:mt-[60px]">{Name}</h3>
-              <p className={`p-text  text-center  mt-5  font-vitenam px-10`}>{comment}</p>
-            </li>
-          ))}
-
-        </ul> */}
-      <ul className="  relative mx-auto w-[340px] h-[248px]   mt-[158px]    flex flex-col gap-10 ">
+       
+      <ul className=" bg-almost-white -z-50 relative mx-auto w-[340px] min-h-[248px]   mt-[158px]    flex flex-col gap-10 ">
         {testimonials.map(({ id, Name, comment, avatar }) => (
           <li
             key={id}
-            className={` bg-almost-white transition ease-in-out  duration-700 absolute -z-10   mx-auto ${
+            className={`   transition ease-in-out  duration-700 absolute -z-10   mx-auto ${
               id === isActive ? "opacity-100" : "opacity-0"
             }`}
           >
@@ -53,7 +44,7 @@ export default function Testimonials({ testimonials }) {
           </li>
         ))}
       </ul>
-      <ul className="flex gap-1 mx-auto  justify-center">
+      <ul className="flex gap-1 mx-auto mt-5 justify-center">
         {testimonials.map(({ id }) => (
           <li key={id} className={`w-2 h-2  ${id === isActive ?"bg-BrightRed" :"bg-white"} border border-BrightRed rounded-full`}></li>
         ))}
