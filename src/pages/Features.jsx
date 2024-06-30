@@ -5,7 +5,7 @@ import { bgTablet } from "../utils";
 export default function Features({ features }) {
   return (
     <section className=" relative lg:container lg:mt-[132px] mt-[93px] grid md:grid-cols-2">
-      <img src={bgTablet} alt=""  className=" max-md:hidden absolute left-[-50%] bottom-[-100%] -z-10"/>
+      <img src={bgTablet} alt=""  className=" max-md:hidden absolute left-[-50%] bottom-[-90%] -z-10"/>
       <div className="container">
         <h2 className="h2-text lg:mb-6 mb-3 max-lg:text-center">
           What’s different about Manage?
