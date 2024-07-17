@@ -7,6 +7,7 @@ export default function Testimonials({ testimonials }) {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
+      //
       setIsActive((isActive + 1) % 5 === 0 ? 1 : (isActive + 1) % 5);
     }, 3500);
 
