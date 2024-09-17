@@ -2,7 +2,7 @@ import { heroImage } from "../utils";
 
 export default function Hero() {
   return (
-    <div className="container grid lg:grid-cols-2 xl:mt-[220px] mt-[111px] ">
+    <div className="container grid lg:grid-cols-2 xl:mt-[100px] mt-[111px] ">
       <div className="max-lg:order-2 place-self-center ">
         <h1 className="h1-text max-lg:text-center ">
           Bring everyone together to build better products.

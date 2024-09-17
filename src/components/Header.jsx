@@ -11,7 +11,7 @@ export default function Header({ isOpen, handleOpen, inView }) {
       {isOpen && (
         <div className="bg-linear fixed top-0 right-0 left-0 bottom-0"></div>
       )}
-      <header className={`z-50 container py-4   flex fixed ${inView ? "   top-0  py-5 bg-almost-white":"top-[33px]  "} left-[50%] translate-x-[-50%]   justify-between `}>
+      <header className={`z-50 container py-4   flex fixed ${inView ? "   top-0  py-5 bg-almost-white left-[50%] translate-x-[-50%] ":" sticky mt-[33px] "}   justify-between `}>
         <a href="#">
           <img src={logo} alt="manage-logo" />
         </a>
