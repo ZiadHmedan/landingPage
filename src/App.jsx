@@ -12,7 +12,6 @@ function App() {
   const { ref, inView } = useInView({
     threshold: 0.2,
 
-  rootMargin: `-${20}px`,
 });
   const [isOpen, setIsOpen] = useState(false);
   function handleOpen() {
