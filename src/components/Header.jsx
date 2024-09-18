@@ -1,11 +1,19 @@
 /* eslint-disable react/prop-types */
 // /* eslint-disable react/prop-types */
+import { useEffect } from "react";
 import { logo } from "../utils";
 import MobileNavbar from "./MobileNavbar";
 
 import Navbar from "./Navbar";
 
 export default function Header({ isOpen, handleOpen, inView }) {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add('overflow-hidden');
+    } else {
+      document.body.classList.remove('overflow-hidden');
+    }
+  }, [isOpen]);
   return (
     <div className="" >
       {isOpen && (
@@ -16,7 +24,8 @@ export default function Header({ isOpen, handleOpen, inView }) {
           <img src={logo} alt="manage-logo" />
         </a>
         <Navbar />
-         <MobileNavbar isOpen={isOpen}/>
+        {isOpen &&  <MobileNavbar isOpen={isOpen}/>}
+        
         <button className=" btn xl:grid  hidden btn-orange">Get Started</button>
 
         <button className="xl:hidden" onClick={handleOpen}>

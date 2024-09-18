@@ -1,5 +1,7 @@
+import { useEffect } from "react";
 
 export default function MobileNavbar({isOpen}) {
+ 
   return (
 
     <nav className={`absolute left-[50%]   translate-y-[50%] container z-50 transition ease-in-out duration-300  ${isOpen ? " translate-x-[-50%] " :"translate-x-[100%]"} `}>
